@@ -12,7 +12,6 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
     var refeicoes = [Refeicao(nome: "Macarrão", felicidade: 4),
                      Refeicao(nome: "Pizza", felicidade: 4),
                      Refeicao(nome: "Comida Japonesa", felicidade: 5)]
-    
     //numero de linhas
     //count = contador de linhas
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,23 +19,19 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
     }
     //conteudo de cada celula
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //representa a refeicao
         let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
         let refeicao = refeicoes[indexPath.row]
         celula.textLabel?.text = refeicao.nome
-        
         //adicionando mais informacoes a celula
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(mostrarDetalhes(_:)))
         celula.addGestureRecognizer(longPress)
         
         return celula
     }
-    
     //Adicionando refeição ocultando método
     //definindo metodo
     func add(_ refeicao: Refeicao) {
         refeicoes.append(refeicao)
-        //Para adicionar itens á lista
         tableView.reloadData()
     }
     
@@ -47,11 +42,16 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
             let refeicao = refeicoes[indexPath.row]
             
             let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
-            let botaoCancelar = UIAlertAction(title: "ok", style: .cancel, handler: nil)
+            let botaoCancelar = UIAlertAction(title: "cancelar", style: .cancel, handler: nil)
             alerta.addAction(botaoCancelar)
-            
+            //removendo refeicao
+            let botaoRemover = UIAlertAction(title: "remover", style: .destructive, handler: removeRefeicao)
+            alerta.addAction(botaoRemover)
             present(alerta, animated: true, completion: nil)
         }
+    }
+    func removeRefeicao(alerta: UIAlertAction){
+        print("remover refeicao")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,3 +62,4 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
         }
     }
 }
+

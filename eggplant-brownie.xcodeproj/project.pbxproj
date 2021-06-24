@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE33C67C267A76FE003166E5 /* AdicionarItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33C67A267A76FE003166E5 /* AdicionarItensViewController.swift */; };
 		CE33C67D267A76FE003166E5 /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE33C67B267A76FE003166E5 /* AdicionarItensViewController.xib */; };
+		CE490AE7268272FC003C51A9 /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE490AE6268272FC003C51A9 /* Alerta.swift */; };
 		CE58C79826779BBE001C44F4 /* RefeicoesTableViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58C79726779BBE001C44F4 /* RefeicoesTableViewControllers.swift */; };
 		CE7BF76126710BE800EB4C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BF76026710BE800EB4C3D /* AppDelegate.swift */; };
 		CE7BF76326710BE800EB4C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BF76226710BE800EB4C3D /* SceneDelegate.swift */; };
@@ -16,8 +17,6 @@
 		CE7BF76826710BE800EB4C3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7BF76626710BE800EB4C3D /* Main.storyboard */; };
 		CE7BF76A26710BEA00EB4C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7BF76926710BEA00EB4C3D /* Assets.xcassets */; };
 		CE7BF76D26710BEA00EB4C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7BF76B26710BEA00EB4C3D /* LaunchScreen.storyboard */; };
-		CE7BF77826710BEB00EB4C3D /* eggplant_brownieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BF77726710BEB00EB4C3D /* eggplant_brownieTests.swift */; };
-		CE7BF78326710BEB00EB4C3D /* eggplant_brownieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BF78226710BEB00EB4C3D /* eggplant_brownieUITests.swift */; };
 		CEAE36732672808A00FDDA0C /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE36722672808A00FDDA0C /* Refeicao.swift */; };
 		CEAE3675267281C500FDDA0C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE3674267281C500FDDA0C /* Item.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +41,7 @@
 /* Begin PBXFileReference section */
 		CE33C67A267A76FE003166E5 /* AdicionarItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarItensViewController.swift; sourceTree = "<group>"; };
 		CE33C67B267A76FE003166E5 /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
+		CE490AE6268272FC003C51A9 /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
 		CE58C79726779BBE001C44F4 /* RefeicoesTableViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewControllers.swift; sourceTree = "<group>"; };
 		CE7BF75D26710BE800EB4C3D /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7BF76026710BE800EB4C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,11 +52,7 @@
 		CE7BF76C26710BEA00EB4C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7BF76E26710BEA00EB4C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE7BF77326710BEB00EB4C3D /* eggplant-brownieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eggplant-brownieTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE7BF77726710BEB00EB4C3D /* eggplant_brownieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggplant_brownieTests.swift; sourceTree = "<group>"; };
-		CE7BF77926710BEB00EB4C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE7BF77E26710BEB00EB4C3D /* eggplant-brownieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eggplant-brownieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE7BF78226710BEB00EB4C3D /* eggplant_brownieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggplant_brownieUITests.swift; sourceTree = "<group>"; };
-		CE7BF78426710BEB00EB4C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAE36722672808A00FDDA0C /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		CEAE3674267281C500FDDA0C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				CE7BF75F26710BE800EB4C3D /* eggplant-brownie */,
-				CE7BF77626710BEB00EB4C3D /* eggplant-brownieTests */,
-				CE7BF78126710BEB00EB4C3D /* eggplant-brownieUITests */,
 				CE7BF75E26710BE800EB4C3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,29 +115,12 @@
 			path = "eggplant-brownie";
 			sourceTree = "<group>";
 		};
-		CE7BF77626710BEB00EB4C3D /* eggplant-brownieTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE7BF77726710BEB00EB4C3D /* eggplant_brownieTests.swift */,
-				CE7BF77926710BEB00EB4C3D /* Info.plist */,
-			);
-			path = "eggplant-brownieTests";
-			sourceTree = "<group>";
-		};
-		CE7BF78126710BEB00EB4C3D /* eggplant-brownieUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CE7BF78226710BEB00EB4C3D /* eggplant_brownieUITests.swift */,
-				CE7BF78426710BEB00EB4C3D /* Info.plist */,
-			);
-			path = "eggplant-brownieUITests";
-			sourceTree = "<group>";
-		};
 		CEAE36762672823500FDDA0C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CEAE36722672808A00FDDA0C /* Refeicao.swift */,
 				CEAE3674267281C500FDDA0C /* Item.swift */,
+				CE490AE6268272FC003C51A9 /* Alerta.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE490AE7268272FC003C51A9 /* Alerta.swift in Sources */,
 				CEAE3675267281C500FDDA0C /* Item.swift in Sources */,
 				CE58C79826779BBE001C44F4 /* RefeicoesTableViewControllers.swift in Sources */,
 				CE33C67C267A76FE003166E5 /* AdicionarItensViewController.swift in Sources */,
@@ -312,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7BF77826710BEB00EB4C3D /* eggplant_brownieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7BF78326710BEB00EB4C3D /* eggplant_brownieUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
