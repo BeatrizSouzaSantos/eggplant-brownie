@@ -12,6 +12,7 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
     var refeicoes = [Refeicao(nome: "Macarrão", felicidade: 4),
                      Refeicao(nome: "Pizza", felicidade: 4),
                      Refeicao(nome: "Comida Japonesa", felicidade: 5)]
+    var refeicaoSelecionada: Refeicao?
     //numero de linhas
     //count = contador de linhas
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,20 +41,20 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
             let celula = gesture.view as! UITableViewCell
             guard let indexPath = tableView.indexPath(for: celula) else { return }
             let refeicao = refeicoes[indexPath.row]
-            
             let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
-            let botaoCancelar = UIAlertAction(title: "cancelar", style: .cancel, handler: nil)
+            let botaoCancelar = UIAlertAction(title: "cancelar", style: .cancel)
             alerta.addAction(botaoCancelar)
             //removendo refeicao
-            let botaoRemover = UIAlertAction(title: "remover", style: .destructive, handler: removeRefeicao)
+            let botaoRemover = UIAlertAction(title: "remover", style: .destructive, handler: { alerta in
+                self.refeicoes.remove(at: indexPath.row)
+                self.tableView.reloadData()
+            })
+            
             alerta.addAction(botaoRemover)
+            
             present(alerta, animated: true, completion: nil)
         }
     }
-    func removeRefeicao(alerta: UIAlertAction){
-        print("remover refeicao")
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "adicionar" {
             if let viewController = segue.destination as? ViewController {
