@@ -11,6 +11,7 @@
 		CE33C67D267A76FE003166E5 /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE33C67B267A76FE003166E5 /* AdicionarItensViewController.xib */; };
 		CE490AE7268272FC003C51A9 /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE490AE6268272FC003C51A9 /* Alerta.swift */; };
 		CE58C79826779BBE001C44F4 /* RefeicoesTableViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58C79726779BBE001C44F4 /* RefeicoesTableViewControllers.swift */; };
+		CE6AD4152684F19F00EC6C84 /* RemoveRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AD4142684F19F00EC6C84 /* RemoveRefeicaoViewController.swift */; };
 		CE7BF76126710BE800EB4C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BF76026710BE800EB4C3D /* AppDelegate.swift */; };
 		CE7BF76326710BE800EB4C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BF76226710BE800EB4C3D /* SceneDelegate.swift */; };
 		CE7BF76526710BE800EB4C3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BF76426710BE800EB4C3D /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		CE33C67B267A76FE003166E5 /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
 		CE490AE6268272FC003C51A9 /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
 		CE58C79726779BBE001C44F4 /* RefeicoesTableViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewControllers.swift; sourceTree = "<group>"; };
+		CE6AD4142684F19F00EC6C84 /* RemoveRefeicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveRefeicaoViewController.swift; sourceTree = "<group>"; };
 		CE7BF75D26710BE800EB4C3D /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7BF76026710BE800EB4C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7BF76226710BE800EB4C3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				CE7BF76426710BE800EB4C3D /* ViewController.swift */,
 				CE58C79726779BBE001C44F4 /* RefeicoesTableViewControllers.swift */,
 				CE33C67A267A76FE003166E5 /* AdicionarItensViewController.swift */,
+				CE6AD4142684F19F00EC6C84 /* RemoveRefeicaoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				CE490AE7268272FC003C51A9 /* Alerta.swift in Sources */,
 				CEAE3675267281C500FDDA0C /* Item.swift in Sources */,
 				CE58C79826779BBE001C44F4 /* RefeicoesTableViewControllers.swift in Sources */,
+				CE6AD4152684F19F00EC6C84 /* RemoveRefeicaoViewController.swift in Sources */,
 				CE33C67C267A76FE003166E5 /* AdicionarItensViewController.swift in Sources */,
 				CE7BF76526710BE800EB4C3D /* ViewController.swift in Sources */,
 				CE7BF76126710BE800EB4C3D /* AppDelegate.swift in Sources */,
