@@ -34,6 +34,18 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
     func add(_ refeicao: Refeicao) {
         refeicoes.append(refeicao)
         tableView.reloadData()
+       
+        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+        //salvando refeicao em uma pasta
+        let caminho = diretorio.appendingPathComponent("refeicao")
+        
+        do {
+            
+            let dados = try NSKeyedArchiver.archivedData(withRootObject: refeicoes, requiringSecureCoding: false)
+            try dados.write(to: caminho)
+        } catch {
+            print (error.localizedDescription)
+        }
     }
     
     @objc func mostrarDetalhes(_ gesture: UILongPressGestureRecognizer) {
@@ -42,7 +54,7 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
             guard let indexPath = tableView.indexPath(for: celula) else { return }
             let refeicao = refeicoes[indexPath.row]
             
-            RemoveRefeicaoViewController(controller: self).exibe(<#T##refeicao: Refeicao##Refeicao#>, handler: { alert in
+            RemoveRefeicaoViewController(controller: self).exibe(refeicao, handler: { alert in
                 self.refeicoes.remove(at: indexPath.row)
                 self.tableView.reloadData()
             })
