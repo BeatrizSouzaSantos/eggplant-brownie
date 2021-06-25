@@ -12,6 +12,19 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
     var refeicoes = [Refeicao(nome: "Macarrão", felicidade: 4),
                      Refeicao(nome: "Pizza", felicidade: 4),
                      Refeicao(nome: "Comida Japonesa", felicidade: 5)]
+    override func viewDidLoad() {
+        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+        //salvando refeicao em uma pasta
+        let caminho = diretorio.appendingPathComponent("refeicao")
+        
+        do {
+            let dados = try Data(contentsOf: caminho)
+            guard let refeicoesSalvas = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dados)as? Array<Refeicao> else { return }
+            refeicoes = refeicoesSalvas
+        } catch {
+            print (error.localizedDescription)
+        }
+    }
     var refeicaoSelecionada: Refeicao?
     //numero de linhas
     //count = contador de linhas
